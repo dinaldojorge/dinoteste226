@@ -1,9 +1,17 @@
 import streamlit as st
+# centralizar tamanho e link
+st.markdown(
+    """
+    <div style="text-align:center;">
+        <a href="https://wwww.nike.com" target="_blank">
+            <img src="NIKE.png" width="300">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-# centralizar imagem e tamanho
-col1, col2, col3 = st.columns([1,2,1])
-with col2:
-    st.image("NIKE.png", width=300)
+
 
 
 #st.image("NIKE.png")
