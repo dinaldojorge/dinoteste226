@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown(
     """
     <div style="text-align:center;">
-        <a href="https://wwww.nike.com" target="_blank">
+        <a href="https://nike.com" target="_blank">
             <img src="NIKE.png" width="300">
         </a>
     </div>
