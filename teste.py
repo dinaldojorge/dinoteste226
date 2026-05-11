@@ -11,7 +11,7 @@ img = get_base64("NIKE.png")
 
 st.markdown(f"""
 <div style="text-align:center;">
-    <a href="https://wa.me/558399823445" target="_blank">
+    <a href="https://nike.com" target="_blank">
         <img src="data:image/png;base64,{img}" width="300">
     </a>
 </div>
