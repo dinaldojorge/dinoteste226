@@ -1,6 +1,6 @@
 import streamlit as st
-
-st.image("NIKE.png")
+st.image("NIKE.png", width=300)
+#st.image("NIKE.png")
 st.write("NOME DINALDO JORGE")
 st.image("DINO.png")
 st.write("DINALDO 49 ANOS FORMADO NO CURSO TELECO")
