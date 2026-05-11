@@ -17,7 +17,7 @@ def get_base64(img_file):
 st.markdown("""
 <style>
 .stApp {
-    background-color: #25D366;
+    background-color: #004B2C;
 }
 
 h1, h2, h3, h4, h5, h6, p, div {
