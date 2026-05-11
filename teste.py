@@ -1,47 +1,80 @@
 import base64
 import streamlit as st
-#------------------------------------------------------------
+
+# CONFIGURAÇÃO DA PÁGINA
+st.set_page_config(
+    page_title="Perfil Dinaldo",
+    layout="wide"
+)
+
+# FUNÇÃO BASE64
 def get_base64(img_file):
     with open(img_file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
-img = get_base64("NIKE.png")
+
+# FUNDO VERDE
+st.markdown("""
+<style>
+.stApp {
+    background-color: #25D366;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    color: white;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# ============================================================
+# LOGO NIKE CLICÁVEL
+# ============================================================
+
+img_nike = get_base64("NIKE.png")
+
 st.markdown(f"""
 <div style="text-align:center;">
     <a href="https://nike.com" target="_blank">
-        <img src="data:image/png;base64,{img}" width="300">
+        <img src="data:image/png;base64,{img_nike}" width="300">
     </a>
 </div>
 """, unsafe_allow_html=True)
-#----------------------------------------------------------------
-st.write("NOME DINALDO JORGE")
-#----------------------------------------------------------------
+
+# ============================================================
+# TÍTULO
+# ============================================================
+
+st.write("## NOME DINALDO JORGE")
+
+# ============================================================
+# FOTO + TEXTO AO LADO
+# ============================================================
+
 col1, col2 = st.columns([1,3])
+
 with col1:
     st.image("DINO.png", width=180)
+
 with col2:
     st.markdown("""
     ### DINALDO JORGE
     
     🎓 Formado no curso TELECO  
     📅 49 anos  
-    💻 Desenvolvedor Python e Streamlit
+    💻 Desenvolvedor Python e Streamlit  
+    🚀 Especialista em aplicativos e automações
     """)
-#-------------------------------------------------------------------
-#------------------------------------------------------------
-def get_base64(img_file):
-    with open(img_file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
 
-img = get_base64("ZA.png")
+# ============================================================
+# BOTÃO/IMAGEM WHATSAPP
+# ============================================================
+
+img_za = get_base64("ZA.png")
 
 st.markdown(f"""
-<div style="text-align:center;">
+<div style="text-align:center; margin-top:40px;">
     <a href="https://wa.me/5583998234415" target="_blank">
-        <img src="data:image/png;base64,{img}" width="300">
+        <img src="data:image/png;base64,{img_za}" width="300">
     </a>
 </div>
 """, unsafe_allow_html=True)
-#----------------------------------------------------------------
-
