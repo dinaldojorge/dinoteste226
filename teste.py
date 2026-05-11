@@ -63,6 +63,8 @@ with col2:
     📅 49 anos  
     💻 Desenvolvedor Python e Streamlit  
     🚀 Especialista em aplicativos e automações
+
+    
     """)
 
 # ============================================================
