@@ -18,11 +18,27 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 #---------------------------------------------------------------
-
-
 #st.image("NIKE.png")
+#----------------------------------------------------------------
 st.write("NOME DINALDO JORGE")
-st.image("DINO.png")
-st.write("DINALDO 49 ANOS FORMADO NO CURSO TELECO")
+#--------------
+#st.image("DINO.png")
+#st.write("DINALDO 49 ANOS FORMADO NO CURSO TELECO")
+#--- imagem e texto ao lado
+#-----------------------------------------------------------------
+col1, col2 = st.columns([1,3])
+
+with col1:
+    st.image("DINO.png", width=180)
+
+with col2:
+    st.markdown("""
+    ### DINALDO JORGE
+    
+    🎓 Formado no curso TELECO  
+    📅 49 anos  
+    💻 Desenvolvedor Python e Streamlit
+    """)
+#-------------------------------------------------------------------
 st.image("ZA.png")
 st.link_button("Acessar", "https://wa.me/558399823445")
