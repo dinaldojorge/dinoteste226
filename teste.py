@@ -57,7 +57,7 @@ with col1:
 
 with col2:
     st.markdown("""
-    ### DINALDO JORGE
+    
     
     🎓 Formado no curso TELECO  
     📅 49 anos  
