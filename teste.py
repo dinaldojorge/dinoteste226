@@ -56,7 +56,9 @@ with col1:
     st.image("DINO.png", width=180)
 
 with col2:
-    st.markdown("""    
+    st.markdown("""
+
+    
     🎓 Formado no curso TELECO  
     📅 49 anos  
     💻 Desenvolvedor Python e Streamlit  
