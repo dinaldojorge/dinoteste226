@@ -57,14 +57,10 @@ with col1:
 
 with col2:
     st.markdown("""
-
-    
     🎓 Formado no curso TELECO  
     📅 49 anos  
     💻 Desenvolvedor Python e Streamlit  
     🚀 Especialista em aplicativos e automações
-
-    
     """)
 
 # ============================================================
