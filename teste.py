@@ -1,5 +1,5 @@
 import streamlit as st
-st.image("NIKE.png", width=600)
+st.image("NIKE.png", width=300)
 #st.image("NIKE.png")
 st.write("NOME DINALDO JORGE")
 st.image("DINO.png")
